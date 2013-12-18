@@ -1,4 +1,4 @@
-To see the site live, visit http://vinietskyzilla.github.io/dw-blog/posts/1/the-human-quest-for-value.html
+To see the site live, visit http://vinietskyzilla.github.io/erin-and-david
 
 To learn how to create a project like this one, see
 

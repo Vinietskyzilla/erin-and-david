@@ -1,4 +1,4 @@
-To see the site live, visit http://vinietskyzilla.github.io/erin-and-david
+To see the site live, visit http://vinietskyzilla.github.io/erin-and-david or http://tiny.cc/erin-and-david-wedding
 
 To learn how to create a project like this one, see
 

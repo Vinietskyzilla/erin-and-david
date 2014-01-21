@@ -2,14 +2,80 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <title>Erin and David's Wedding</title>
     <!-- This favicon image is from http://www.softicons.com/free-icons/system-icons/kaito-icon-set-by-tooschee/blue-heart-coloured-icon and is free for non-commercial use. Commercial use is prohibited. -->
-    <link rel="shortcut icon" href="/erin-and-david/heart.png">
+    <link rel="shortcut icon" href="images/heart.png">
+    <style>
+      .flip-vertical {
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        transform: scaleY(-1);
+        -ms-filter: flipv; /*IE*/
+        filter: flipv; /*IE*/
+      }
+      .small-print { font-size: 12px; }
+      .fancy { text-align: center; }
+      html { background: rgb(42, 133, 158) url('images/2013-11-28 16.27.15.jpg') no-repeat center center; background-size: auto 100%; }
+      body { font-family: sans-serif; }
+      h1 { text-align: center; font-size: 21px; }
+      img { text-align: center; }
+      .page-container { max-width: 700px; margin: auto; }
+      .content-container { max-width: 600px; margin: auto; }
+      .flourish { width: 100%; max-width: 700px; }
+      .gallery img { max-width: 200px; display: block; margin: auto; margin-bottom: 20px; }
+      div.gift-button { max-width: 340px; margin: auto; }
+      div.gift-button p { margin-left: 15px; }
+      div.gift-button .small-print { text-align: left; }
+      .footer, div.gift-button { text-align: center; }
+      a { text-decoration: none; }
+      a:visited { color: rgb(0, 0, 238); }
+    </style>
   </head>
   <body>
-    <p>Work in progress.</p>
-    <div class="footer">
-      <p><a href="https://github.com/Vinietskyzilla/erin-and-david">Hosted on Github.</a> Copyright 2013 David Winiecki.</p>
+    <div class="page-container">
+      <img src="images/flower-flourish.png" class="flourish">
+      <div class="content-container">
+        <h1>The Wedding of Erin<br>Dewalt and David Winiecki</h1>
+
+        <p class="fancy">On Sunday, the Twenty Seventh of July<br>
+        Two Thousand Fourteen<br>
+        Five o'clock</p>
+        <p class="fancy">At the Cove<br>
+        Normandy Park, Washington</p>
+        <p class="small-print fancy">Reception to follow at the Cove</p>
+        <p class="fancy">DISNEY PHOTO OR BEACH PHOTO</p>
+        <div class="gallery">
+          <img src="images/2013-10-04 14.17.57.jpg">
+          <!--<img src="images/2013-10-30 12.57.47.jpg">
+          <img src="images/2013-10-14 22.10.24.jpg">
+          <img src="images/2013-06-21 08.01.06.jpg">
+          <img src="images/2013-09-28 12.05.37.jpg">-->
+        </div>
+        <p class="fancy"><a href="gallery.html">More photos</a></p>
+        <p class="text-left">We are content with the material wealth we already possess. However there are many large expenses (travelling to Europe, buying a house, having children and sending them to college, weddings...) that we would be grateful to have help with. If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online payment option below.</p>
+        <div class="gift-button">
+          <script
+            src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
+            data-key="rslbdZybqExykheJTmgYODXpKF6xoGztVl6w38tkb0LdLMUgIz"
+            data-redirect="http://vinietskyzilla.github.io/erin-and-david/"
+            data-label="Give wedding gift"
+            data-name="Wedding gift to Erin and David"
+            data-description="Wedding gift to Erin and David"
+            data-amount="25"
+            data-guest-checkout="true"
+            data-type="freetype"
+            >
+          </script>
+          <p class="small-print gift-small-print">Requires bank routing and account numbers. We chose Dwolla because it's very easy and only takes a flat 25&cent; fee from every transfer.</p>
+        </div>
+        <div class="footer">
+          <p class="small-print"><a href="https://github.com/Vinietskyzilla/erin-and-david">Hosted on Github</a>. Copyright 2013 David Winiecki.</p>
+        </div>
+      </div>
+      <img src="images/flower-flourish.png" class="flourish flip-vertical">
+      <div style="height: 250px;"></div>
     </div>
   </body>
 </html>

@@ -17,7 +17,7 @@
       }
       .small-print { font-size: 12px; }
       .fancy { text-align: center; }
-      html { background: rgb(42, 133, 158) url('images/2013-11-28 16.27.15.jpg') no-repeat center center; background-size: auto 100%; }
+      html { background: url('images/2013-11-28 16.27.15.jpg') no-repeat center center; background-size: auto 100%; }
       body { font-family: sans-serif; }
       h1 { text-align: center; font-size: 21px; }
       img { text-align: center; }
@@ -34,6 +34,8 @@
     </style>
   </head>
   <body>
+    <!-- Fetch the background image early to reduce flash of unstyling. -->
+    <img style="display: none;" src="images/2013-11-28 16.27.15.jpg">
     <div class="page-container">
       <img src="images/flower-flourish.png" class="flourish">
       <div class="content-container">

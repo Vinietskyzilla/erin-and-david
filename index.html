@@ -8,12 +8,14 @@
     <link rel="shortcut icon" href="images/heart.png">
     <link rel="stylesheet" href="wedding.css">
     <style>
-      .browser-not-supported { display: none; }
+      .browser-not-supported { display: none; background: white; }
     </style>
-    <!--[if lt IE 9]>
+    <!--[if lt IE 10]>
     <style>
-      * { display: none; }
+      body * { display: none; }
       .browser-not-supported { display: block; }
+      .browser-not-supported h1,
+      .browser-not-supported p { display: block; }
     </style>
     <![endif]-->
   </head>
@@ -42,12 +44,10 @@
         <p class="small-print fancy">Reception to follow at the Cove</p>
         -->
 
-        <p class="fancy">DISNEY PHOTO OR BEACH PHOTO</p>
-        <div class="gallery">
-          <img src="images/2013-10-04 14.17.57.jpg">
-        </div>
+        <img src="images/2013-10-04 14.17.57.jpg" style="max-width: 200px; display: block; margin: auto; margin-bottom: 20px;">
         <p class="fancy"><a href="gallery.html">More photos</a></p>
-        <p class="text-left" style="margin-left: 20px;">We are content with the material wealth we already possess, but we have lots of hopes and dreams, like travelling to Europe, buying a house, having children and sending them to college, ending poverty and hunger, and saving the rainforests and coral reefs. We would be grateful to have help with these! If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online payment option below.</p>
+        <h3 class="fancy" style="margin-top: 26px;">Gifts</h3>
+        <p class="text-left" style="margin-left: 20px;">We are content with the material wealth we already possess, but we have lots of hopes and dreams, like travelling to Europe, buying a house, having children and sending them to college, ending poverty and hunger, and saving the rainforests and coral reefs. We would be grateful to have help with these! If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online transfer option below.</p>
         <div class="gift-button">
           <script
             src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
@@ -68,6 +68,7 @@
         </div>
       </div>
       <img src="images/flower-flourish.png" class="flourish flip-vertical">
+      <!-- Hack to push the trees in the background image down below the last content. -->
       <div style="height: 250px;"></div>
     </div>
   </body>

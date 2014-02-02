@@ -14,16 +14,16 @@ html {
   LightSkyBlue rgba(135, 206, 250, 1.0)
   rgba(166, 238, 226, 1.0)
    */
-  background: url('images/2013-11-28 16.27.15.jpg'); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%, rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 191, 255, 1.0)), color-stop(100%,rgba(255, 255, 255, 0.0))), url('images/2013-11-28 16.27.15.jpg'); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* Opera11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* IE10+ */
+  background: url('images/sky_forest.jpg'); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%, rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 191, 255, 1.0)), color-stop(100%,rgba(255, 255, 255, 0.0))), url('images/sky_forest.jpg'); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'); /* IE10+ */
   /* This looks really really bad. */
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 191, 255, 1.0)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=0 ); /* IE6-9 */
   /* If I enable this then my android phone tries to use it and it looks awful. */
-  /*background: linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* W3C */
+  /*background: linear-gradient(top, rgba(0, 191, 255, 1.0) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'); /* W3C */
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -33,7 +33,6 @@ img { text-align: center; }
 .page-container { max-width: 700px; margin: auto; }
 .content-container { max-width: 600px; margin: auto; }
 .flourish { width: 100%; max-width: 700px; }
-.gallery img { max-width: 200px; display: block; margin: auto; margin-bottom: 20px; }
 div.gift-button { max-width: 340px; margin: auto; }
 div.gift-button p { margin-left: 15px; }
 div.gift-button .small-print { text-align: left; }

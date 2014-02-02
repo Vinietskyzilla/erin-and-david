@@ -17,7 +17,40 @@
       }
       .small-print { font-size: 12px; }
       .fancy { text-align: center; }
-      html { background: url('images/2013-11-28 16.27.15.jpg') no-repeat center center; background-size: auto 100%; }
+
+            html {
+        /*
+        DeepSkyBlue rgba(0, 191, 255, 0.5)
+        LightSkyBlue rgba(135, 206, 250, 0.5)
+        rgba(166, 238, 226, 0.5)
+        */
+
+        background: url('images/2013-11-28 16.27.15.jpg'); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(0, 191, 255, 0.7) 0%, rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 191, 255, 0.7)), color-stop(100%,rgba(255, 255, 255, 0.0))), url('images/2013-11-28 16.27.15.jpg'); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(0, 191, 255, 0.7) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(0, 191, 255, 0.7) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* Opera11.10+ */
+        background: -ms-linear-gradient(top, rgba(0, 191, 255, 0.7) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* IE10+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 191, 255, 0.7)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=0 ); /* IE6-9 */
+        background: linear-gradient(top, rgba(0, 191, 255, 0.7) 0%,rgba(255, 255, 255, 0.0) 100%), url('images/2013-11-28 16.27.15.jpg'); /* W3C */
+
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      /*html * { opacity: 1.0; }*/
+      /*html::after {
+        content: "";
+        background: url('images/2013-11-28 16.27.15.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }*/
       body { font-family: sans-serif; }
       h1 { text-align: center; font-size: 21px; }
       img { text-align: center; }
@@ -41,7 +74,7 @@
       <div class="content-container">
         <h1>The Wedding of Erin<br>Dewalt and David Winiecki</h1>
         <h1>REDUCE IMAGE SIZES WHERE POSSIBLE TO REDUCE LOAD TIMES</h1>
-        
+
         <p class="fancy">5 o'clock on Sunday July 27th, 2014<br>At the Cove, Normandy Park, Washington</p>
         <p class="small-print fancy">Reception to follow at the Cove</p>
 
@@ -58,7 +91,7 @@
           <img src="images/2013-10-04 14.17.57.jpg">
         </div>
         <p class="fancy"><a href="gallery.html">More photos</a></p>
-        <p class="text-left" style="margin-left: 20px;">We are content with the material wealth we already possess. However there are many large expenses (travelling to Europe, buying a house, having children and sending them to college, weddings...) that we would be grateful to have help with. If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online payment option below.</p>
+        <p class="text-left" style="margin-left: 20px;">We are content with the material wealth we already possess, but we have lots of hopes and dreams, like travelling to Europe, buying a house, having children and sending them to college, ending poverty and hunger, and saving the rainforests and coral reefs. We would be grateful to have help with these! If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online payment option below.</p>
         <div class="gift-button">
           <script
             src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
@@ -75,7 +108,7 @@
           <p class="small-print gift-small-print">Requires bank routing and account numbers. We chose Dwolla because it's very easy and only takes a flat 25&cent; fee from every transfer.</p>
         </div>
         <div class="footer">
-          <p class="small-print"><a href="https://github.com/Vinietskyzilla/erin-and-david">Hosted on Github</a>. Copyright 2013 David Winiecki.</p>
+          <p class="small-print"><a href="https://github.com/Vinietskyzilla/erin-and-david">Hosted on Github</a>. Copyright 2014 David Winiecki.</p>
         </div>
       </div>
       <img src="images/flower-flourish.png" class="flourish flip-vertical">

@@ -44,7 +44,7 @@
         -->
 
         <img src="images/beach.jpg" style="max-width: 300px; display: block; margin: auto; margin-bottom: 20px;">
-        <p class="fancy"><a href="gallery.html">More photos</a><br><span class="small-print">(WARNING: will eat your mobile data.)</span></p>
+        <p class="fancy"><a href="gallery.html" target="_blank">More photos</a><br><span class="small-print">(WARNING: will eat your mobile data.)</span></p>
         <!--<h2 class="fancy" style="margin-top: 26px;">Gifts</h2>-->
         <div class="gift-info">
           <p>We are content with the material wealth we already possess, but we have lots of hopes and dreams, like travelling to Europe, buying a house, having children and sending them to college, ending poverty and hunger, and saving the rainforests and coral reefs. We would be grateful to have help with these! If you would like to give us a wedding gift, please send us a check (email David for our address at <a href="mailto:david.winiecki@gmail.com">david.winiecki@gmail.com</a>) or use the online transfer option below.</p>
@@ -63,9 +63,9 @@
             >
           </script>
         </div>
-          <div class="gift-small-print">
-            <p class="small-print">Requires bank routing and account numbers. We chose Dwolla because it's very easy and only takes a flat 25&cent; fee from every transfer.</p>
-          </div>
+        <div class="gift-small-print">
+          <p class="small-print">Requires bank routing and account numbers. We chose Dwolla because it's very easy and only takes a flat 25&cent; fee from every transfer.</p>
+        </div>
         <div class="footer">
           <p class="small-print"><a href="https://github.com/Vinietskyzilla/erin-and-david">Hosted on Github</a>. Copyright 2014 David Winiecki.</p>
         </div>
@@ -74,6 +74,26 @@
       <!-- Hack to push the trees in the background image down below the last content. -->
       <div style="height: 300px;"></div>
     </div>
+    <audio id="audio" style="display: none;" src="pgil%20-%20the%20sad%20monkey.mp3" autoplay></audio>
+    <div id="audio_control" onclick="toggle_pause();"></div> 
+    <script>
+      var audio = document.getElementById('audio');
+      var control = document.getElementById('audio_control');
+      var paused = false;
+      function toggle_pause() {
+        if(paused) {
+          paused = false;
+          console.log('playing');
+          control.className = ""
+          audio.play();
+          } else {
+          paused = true;
+          console.log('pausing');
+          control.className += "paused"
+          audio.pause();
+        }
+      }
+    </script>
     <!-- Google Analytics, just for fun. -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

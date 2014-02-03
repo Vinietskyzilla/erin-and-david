@@ -44,7 +44,7 @@ a:visited { color: rgb(0, 0, 238); }
 @media only screen and (max-device-width: 600px) {
   /*
   If I want to do better than this and make text readable without accessibility adjustments, and prevent browsers from changing the width of text, I need to study other websites that accomplish that using the chrome debugger on my phone. Hmm, but I'm trying to make this work in the android browser. Hmm...
-  */
+   */
   .page-container,
   .content-container,
   .flourish,
@@ -52,3 +52,16 @@ a:visited { color: rgb(0, 0, 238); }
   .gift-info, .gift-small-print { width: 50%; margin: auto; }
   .d-btn { height: 50px; }
 }
+
+#audio_control {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background: url('images/moz-audio-control.png');
+}
+#audio_control { background-position: -26px -3px; }
+#audio_control:hover { background-position: -26px -31px; }
+#audio_control.paused { background-position: -1px -3px; }
+#audio_control.paused:hover { background-position: -1px -31px; }

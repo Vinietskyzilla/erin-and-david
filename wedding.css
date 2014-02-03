@@ -48,4 +48,5 @@ a:visited { color: rgb(0, 0, 238); }
   .gift-small-print { max-width: none; }
   .gift-info, .gift-small-print { min-width: 50%; margin: auto; }
   .d-btn { height: 50px; }
+  p { font-size: 50px; /*16px*/}
 }

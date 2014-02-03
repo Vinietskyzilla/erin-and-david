@@ -74,24 +74,24 @@
       <!-- Hack to push the trees in the background image down below the last content. -->
       <div style="height: 300px;"></div>
     </div>
-    <audio id="audio" style="display: none;" src="pgil%20-%20the%20sad%20monkey.mp3" autoplay></audio>
+    <audio id="audio" src="pgil%20-%20the%20sad%20monkey.mp3"></audio>
     <div class="visible-audio">
-      <div id="audio_control" onclick="toggle_pause();"></div>
+      <div id="audio_control" class="paused" onclick="toggle_pause();"></div>
       <p class="small-print fancy"><a href="https://sites.google.com/site/whoispgil/music" target="_blank">&#x266b; by<br>pgil</a></p>
     </div>
     <script>
       var audio = document.getElementById('audio');
       var control = document.getElementById('audio_control');
-      var paused = false;
+      var paused = true;
       function toggle_pause() {
         if(paused) {
           paused = false;
-          console.log('playing');
           control.className = ""
+          control.className += "playing"
           audio.play();
           } else {
           paused = true;
-          console.log('pausing');
+          control.className = ""
           control.className += "paused"
           audio.pause();
         }

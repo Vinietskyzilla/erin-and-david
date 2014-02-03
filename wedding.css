@@ -46,6 +46,6 @@ a:visited { color: rgb(0, 0, 238); }
   .content-container,
   .flourish,
   .gift-small-print { max-width: none; }
-  .gift-info, .gift-small-print { width: 80%; margin: auto; }
+  .gift-info, .gift-small-print { width: 70%; margin: auto; }
   .d-btn { height: 50px; }
 }

@@ -56,10 +56,12 @@ a:visited { color: rgb(0, 0, 238); }
 #audio_control {
   width: 30px;
   height: 30px;
+  background: url('images/moz-audio-control.png');
+}
+.visible-audio {
   position: fixed;
   right: 20px;
   top: 20px;
-  background: url('images/moz-audio-control.png');
 }
 #audio_control { background-position: -26px -3px; }
 #audio_control:hover { background-position: -26px -31px; }

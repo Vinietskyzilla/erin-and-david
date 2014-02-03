@@ -42,6 +42,9 @@ a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
 .gift-info { margin-left: 20px; }
 @media only screen and (max-device-width: 600px) {
+  /*
+  If I want to do better than this and make text readable without accessibility adjustments, and prevent browsers from changing the width of text, I need to study other websites that accomplish that using the chrome debugger on my phone. Hmm, but I'm trying to make this work in the android browser. Hmm...
+  */
   .page-container,
   .content-container,
   .flourish,

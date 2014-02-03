@@ -42,8 +42,8 @@ div.gift-button .small-print { text-align: left; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
 .gift-info { margin-left: 20px; }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .page-container,
   .content-container,
-  .gift-info { margin: 0; }
+  .gift-info { max-width: none; margin: 0; }
 }

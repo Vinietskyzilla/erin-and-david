@@ -41,7 +41,7 @@ div.gift-button .small-print { text-align: left; }
 .footer, div.gift-button { text-align: center; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
-.gift-info { margin-left: 20px; }
+.gift-info { margin-left: 20px; color: red; }
 @media only screen and (max-width: 600px) {
   h1 { font-size: 50px; color: orange; }
   .page-container,

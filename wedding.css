@@ -35,8 +35,8 @@ img { text-align: center; }
 .page-container { max-width: 1050px /*700px*/; margin: auto; }
 .content-container { max-width: 900px /*600px*/; margin: auto; }
 .flourish { width: 100%; max-width: 1050px /*700px*/; }
-div.gift-button { max-width: 550px /*340px*/; margin: auto; }
-.gift-small-print { margin-left: 15px; }
+.gift-button,
+.gift-small-print { max-width: 550px /*340px*/; margin: auto; }
 .footer, div.gift-button { text-align: center; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
@@ -44,7 +44,8 @@ a:visited { color: rgb(0, 0, 238); }
 @media only screen and (max-device-width: 600px) {
   .page-container,
   .content-container,
-  .flourish { max-width: none; }
+  .flourish,
+  .gift-small-print { max-width: none; }
   .gift-info, .gift-small-print { width: 50%; margin: auto; }
   .d-btn { height: 50px; }
 }

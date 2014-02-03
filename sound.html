@@ -1,10 +1,37 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <style>
+      #audio_control { width: 30px; height: 30px; background: url('images/moz-audio-control.png'); }
+      #audio_control { background-position: -26px -3px; }
+      #audio_control:hover { background-position: -26px -31px; }
+      #audio_control.paused { background-position: -1px -3px; }
+      #audio_control.paused:hover { background-position: -1px -31px; }
+    </style>
   </head>
   <body>
-<audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+<audio id="audio" style="display: none;" src="pgil%20-%20the%20sad%20monkey.mp3" autoplay>
   Your browser does not support the <code>audio</code> element.
-</audio>
+  </audio>
+  <div id="audio_control" onclick="toggle_pause();"></div> 
+  <script>
+    var audio = document.getElementById('audio');
+    var control = document.getElementById('audio_control');
+    var paused = false;
+    function toggle_pause() {
+      if(paused) {
+        paused = false;
+        console.log('playing');
+        control.className = ""
+        audio.play();
+      } else {
+        paused = true;
+        console.log('pausing');
+        control.className += "paused"
+        audio.pause();
+      }
+    }
+  </script>
 </body>
 </html>

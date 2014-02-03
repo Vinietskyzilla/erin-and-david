@@ -29,6 +29,8 @@ html {
 }
 body { font-family: sans-serif; }
 h1 { text-align: center; font-size: 21px; }
+h2 { text-align: center; font-size: 18px; }
+p { font-size: 16px; }
 img { text-align: center; }
 .page-container { max-width: 700px; margin: auto; }
 .content-container { max-width: 600px; margin: auto; }
@@ -39,3 +41,9 @@ div.gift-button .small-print { text-align: left; }
 .footer, div.gift-button { text-align: center; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
+.gift-info { margin-left: 20px; }
+@media (max-width: 600px) {
+  .page-container,
+  .content-container,
+  .gift-info { margin: 0; }
+}

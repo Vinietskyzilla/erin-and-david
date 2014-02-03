@@ -53,7 +53,7 @@ a:visited { color: rgb(0, 0, 238); }
 .visible-audio {
   position: fixed;
   right: 20px;
-  top: 160px;
+  top: 120px;
 }
 #audio_control.playing { background-position: -26px -3px; }
 #audio_control.playing:hover { background-position: -26px -31px; }

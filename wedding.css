@@ -36,8 +36,7 @@ img { text-align: center; }
 .content-container { max-width: 900px /*600px*/; margin: auto; }
 .flourish { width: 100%; max-width: 1050px /*700px*/; }
 div.gift-button { max-width: 550px /*340px*/; margin: auto; }
-div.gift-button p { margin-left: 15px; }
-div.gift-button .small-print { text-align: left; }
+.gift-small-print { margin-left: 15px; }
 .footer, div.gift-button { text-align: center; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
@@ -46,6 +45,6 @@ a:visited { color: rgb(0, 0, 238); }
   .page-container,
   .content-container,
   .flourish { max-width: none; }
-  .gift-info { width: 50%; margin: auto; }
+  .gift-info, .gift-small-print { width: 50%; margin: auto; }
   .d-btn { height: 50px; }
 }

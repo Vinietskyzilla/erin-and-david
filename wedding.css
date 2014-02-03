@@ -14,15 +14,15 @@ html {
   rgba(166, 238, 226, 1.0)
    */
   background: url('images/sky_forest.jpg'), black; /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(0, 191, 255, 1.0) 20%, rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(0, 191, 255, 1.0)), color-stop(100%,rgba(255, 255, 255, 0.0))), url('images/sky_forest.jpg'), black; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 191, 255, 1.0) 20%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 191, 255, 1.0) 20%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* Opera11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 191, 255, 1.0) 20%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* IE10+ */
+  background: -moz-linear-gradient(top, rgba(0, 191, 255, 1.0) 60%, rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,rgba(0, 191, 255, 1.0)), color-stop(100%,rgba(255, 255, 255, 0.0))), url('images/sky_forest.jpg'), black; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 191, 255, 1.0) 60%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 191, 255, 1.0) 60%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 191, 255, 1.0) 60%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* IE10+ */
   /* This looks really really bad. */
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 191, 255, 1.0)', endColorstr='rgba(255, 255, 255, 0.0)',GradientType=0 ); /* IE6-9 */
   /* If I enable this then my android phone tries to use it and it looks awful. */
-  /*background: linear-gradient(top, rgba(0, 191, 255, 1.0) 20%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* W3C */
+  /*background: linear-gradient(top, rgba(0, 191, 255, 1.0) 60%,rgba(255, 255, 255, 0.0) 100%), url('images/sky_forest.jpg'), black; /* W3C */
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -56,12 +56,12 @@ a:visited { color: rgb(0, 0, 238); }
 #audio_control {
   width: 30px;
   height: 30px;
-  background: url('images/moz-audio-control.png');
+  background: url('images/moz-audio-control.png') no-repeat center center;
 }
 .visible-audio {
   position: fixed;
   right: 20px;
-  top: 200px;
+  top: 160px;
 }
 #audio_control { background-position: -26px -3px; }
 #audio_control:hover { background-position: -26px -31px; }

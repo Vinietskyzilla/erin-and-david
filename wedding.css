@@ -46,7 +46,7 @@ a:visited { color: rgb(0, 0, 238); }
   .page-container,
   .content-container,
   .flourish { max-width: none; }
-  .gift-info { max-width: 1000px; margin: auto; }
+  .gift-info { width: 50%; margin: auto; }
   .gift-info p { color: red; }
   .d-btn { height: 50px; }
 }

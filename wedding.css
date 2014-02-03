@@ -41,22 +41,14 @@ img { text-align: center; }
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 238); }
 .gift-info { margin-left: 10px; }
-@media only screen and (max-device-width: 600px) {
-  /*
-  If I want to do better than this and make text readable without accessibility adjustments, and prevent browsers from changing the width of text, I need to study other websites that accomplish that using the chrome debugger on my phone. Hmm, but I'm trying to make this work in the android browser. Hmm...
-   */
-  .page-container,
-  .content-container,
-  .flourish,
-  .gift-small-print { max-width: none; }
-  .gift-info, .gift-small-print { width: 50%; margin: auto; }
-  .d-btn { height: 50px; }
-}
+
 
 #audio_control {
   width: 30px;
   height: 30px;
   background: url('images/moz-audio-control.png') no-repeat center center;
+  margin: auto;
+  cursor: pointer;
 }
 .visible-audio {
   position: fixed;
@@ -67,3 +59,25 @@ a:visited { color: rgb(0, 0, 238); }
 #audio_control.playing:hover { background-position: -26px -31px; }
 #audio_control.paused { background-position: -1px -3px; }
 #audio_control.paused:hover { background-position: -1px -31px; }
+
+@media only screen and (max-device-width: 600px) {
+  /*
+  If I want to do better than this and make text readable without accessibility adjustments, and prevent browsers from changing the width of text, I need to study other websites that accomplish that using the chrome debugger on my phone. Hmm, but I'm trying to make this work in the android browser. Hmm...
+   */
+  .page-container,
+  .content-container,
+  .flourish,
+  .gift-small-print { max-width: none; }
+  .gift-info, .gift-small-print { width: 50%; margin: auto; }
+  .d-btn { height: 50px; }
+
+  #audio_control {
+    width: 60px;
+    height: 60px;
+    background: url('images/moz-audio-control-big.png') no-repeat center center;
+  }
+  #audio_control.playing { background-position: -52px -6px; }
+  #audio_control.playing:hover { background-position: -52px -62px; }
+  #audio_control.paused { background-position: -2px -6px; }
+  #audio_control.paused:hover { background-position: -2px -62px; }
+}
